@@ -1,0 +1,141 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    outline: none;
+    font-size: 16px;
+    font-family: Roboto-Light;
+}
+
+.headerPage{
+    height: 100vh;
+    width: 100vw;
+}
+.headerPage_img{
+    height: 100%;
+    width: 100%;
+}
+.headerPage_menu{
+    display: flex;
+    position: fixed;
+    top: 1em;
+    left: .5em;
+    width: 2.5em;
+    height: 2.5em;
+    background: rgb(43, 19, 19);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .3em;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 3px solid rgba(238, 238, 238, 0.226);
+}
+.capa_oculto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.menu_line{
+    width: 70%;
+    height: 12%;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.mainPage{
+    padding: 2em 1em;
+    text-align: justify;
+}
+
+.mainPage img{
+    width: 50%;
+    height: 70%;
+}
+h1{
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: .4em;
+    border-bottom: 2px solid rgb(190, 36, 9);
+}
+
+.headerPage_menuActive{
+    display: grid;
+    transform: translateX(-14em);
+    grid-template-columns: 12em 1.5em;
+    grid-template-rows: 90vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 13.5em;
+    height: 100vh;
+}
+.headerPage_menuActive div{
+    background: rgba(20, 123, 192, .9);
+}
+.headerPage_menuActive img{
+    width: 100%;
+    height: 15em;
+}
+.headerPage_menuActive div span{
+    display: block;
+    margin: .2em .1em;
+    padding: 1em 1em;
+    background: rgb(10, 69, 136);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Roboto-Medium;
+    text-align: center;
+}
+.headerPage_menuActive div span:active{
+    background: rgb(60, 119, 187); 
+}
+
+.cerrar{
+    display: flex;
+    height: 90%;
+    position: fixed;
+    left: 12em;
+    justify-content: end;
+    align-items: center;
+}
+.cerrar span{
+    padding: 2em .2em;
+    background: rgb(9, 66, 151);
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
+}
+.cerrar span:active{
+    background: rgb(40, 92, 170);
+}
+
+.footerPage{
+    height: 8em;
+    background: rgb(0, 0, 0);
+    padding: 1em;
+    color: #fff;
+    font-size: 12px;
+}
+.footerPage h2{
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    text-align: center;
+}
+.footerPage p{
+    text-align: center;
+}
+
+.mainPageGalery img{
+    width: 100%;
+    height: 100%;
+    margin: .3em;
+}
+.mainPageGalery{
+    display: grid;
+    padding: 2em 2em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, 15em);
+    grid-gap: 5px;
+}
